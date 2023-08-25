@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-transform: capitalize;
+    text-decoration: none; 
+    font-family: 'Sen', sans-serif;
+    font-weight: 500;
+}
+:root{
+    --main-color1:#001431;
+    --main-color2:#f8f2e2;
+    --black:#000;
+    --white:#fff;
+    --red:#e73232;
+    --text:#7c7c7d;
+}
+.align{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 3rem;
+}
+html{
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+}
+.home{
+    height: 100%;
+    background: linear-gradient(to right,var(--main-color1) ,var(--main-color1) 60% ,var(--main-color2) 60% ,var(--main-color2) 100%);
+}
+.navbar-brand {
+    width: 16%;
+    height: 100px;
+}
+.navbar-brand img{
+    height: 100%;
+    width: 100%;
+}
+.navbar a{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.nav-item{
+    margin-left: 10px;
+}
+.nav-item a:hover{
+    border: 1px solid var(--white);
+    transition: 0.5s;
+}
+.navbar-nav .active{
+    border: 1px solid var(--white);
+}
+.navbar-nav2{
+    position: absolute;
+    right: 0;
+}
+.navbar-nav2 li{
+    display: inline;
+}
+.navbar-nav2 a{
+    text-decoration: none;
+}
+.navbar-nav2:hover{
+    color: var(--white);
+}
+
+.carousel-content{
+    margin-top: 18%;
+    margin-left: 18%;
+}
+.carousel-content h1{
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+.carousel-content p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: 100;
+}
+.btn{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: -10px;
+}
+.contact_btn{
+    width: 170px;
+    float: left;
+    margin-left: 10px;
+}
+.contact_btn a {
+    width: 100%;
+    float: left;
+    padding: 8px 10px;
+    color: var(--white);
+    background-color: var(--red);
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.contact_btn a:hover {
+    color: var(--main-color1);
+    background-color: var(--white);
+}
+
+.read_btn {
+    width: 170px;
+    float: left;
+}
+.read_btn a {
+    width: 100%;
+    float: left;
+    padding: 8px 10px;
+    color: var(--white);
+    background-color: var(--red);
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.read_btn a:hover {
+    color: var(--main-color1);
+    background-color: var(--white);
+}
+.read_btn.active a {
+    color: var(--main-color1);
+    background-color: var(--white);
+}
+.carousel-img{
+    height: 70%;
+    margin-top: 10%;
+    padding-left: 20%;
+}
+.carousel-img img{
+    height: 100%;
+}
+
+.cards .container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+}
+.card-content{
+    padding: 7% 10%;
+    background-color: var(--white);
+}
+.card-content1{
+    padding: 7% 10%;
+    font-size: 10px;
+    background-color:var(--white);
+}
+.card-content:hover{
+    background-color: var(--red);
+}
+.card-content h6:hover{
+    color: var(--white);
+}
+.card-content h4:hover{
+    color: var(--white);
+}
+.right-arrow {
+    width: 50px;
+    font-size: 20px;
+    color: var(--white);
+    background-color: var(--main-color1);
+    border-radius: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.card-text{
+    margin-left: 25%;
+    margin-top: -20%;
+}
+.card-text h6{
+    color: var(--red);
+    font-weight: 500;
+}
+.card-text h4{
+    color: var(--main-color1);
+    font-weight: 500;
+}
+.card .active{
+    background-color: var(--red);
+}
+.card-content .active h6{
+    color: var(--white);
+}
+.card-content .active h4{
+    color: var(--white);
+}
+
+
+
+.heading{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.service h1{
+    margin-top: 10%;
+}
+.service .row .active h2{
+    color: var(--red);
+}
+.service .row .active p{
+    color: var(--red);
+}
+.service .row .active .read_btn{
+    background-color: var(--red);
+}
+#carousel2{
+    background-color: var(--main-color2);
+}
+#carousel2 a{
+    position: absolute;
+    background-color: var(--main-color1);
+    width: 50px;
+    height: 50px;
+    margin-top: 15%;
+    margin-right: 5%;
+    margin-left: 3%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+}
+.service .read_btn{
+    color: var(--white);
+    background-color: var(--main-color1);
+    text-align: center;
+    padding: 8px 10px;
+    border: none;
+}
+.service .read_btn:hover{
+    background-color: var(--red);
+    border: none;
+}
+
+.study .container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.study h3{
+    font-size: 20px;
+    text-align: center;
+}
+.study .card:hover img {
+    transform: scale(1.1);
+}
+.study .read_btn{
+    color: var(--white);
+    background-color: var(--main-color1);
+    padding: 8px 10px;
+    border: none;
+}
+.study .read_btn:hover{
+    background-color: var(--main-color1);
+    border: none;
+}
+
+.about{
+    background-color: var(--main-color1);
+    padding-top: 10%;
+}
+.about .read_btn{
+    color: var(--white);
+    background-color: var(--red);
+    padding: 8px 10px;
+    border: none;
+}
+.about .read_btn:hover{
+    background-color: var(--main-color1);
+    border: none;
+}
+.clients h1{
+    padding: 5%;
+}
+.clients .img{
+    text-align: end;
+    margin-top: -30px;
+}
+.clients img{
+    height: 70%;
+}
+.clients h3{
+    color: var(--red);
+    font-weight: bold;
+}
+.clients h3 span{
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    right: 0;
+}
+#carousel3 button{
+    position: absolute;
+    background-color: var(--main-color1);
+    width: 50px;
+    height: 50px;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 3%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+}
+#carousel4 i{
+    background-color: var(--red);
+    padding: 10%;
+    border-radius: 100%;
+}
+#carousel4 button{
+    position: absolute;
+    top: 90%;
+    left: 45%;
+}
+.news .container{
+    box-shadow: 0px 5px 5px 0px var(--main-color2);
+}
+.news-text{
+    text-align: center;
+}
+
+.contact{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.contact2 {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: var(--text);
+    border-bottom: 1px solid var(--text);
+    background-color: transparent;
+    padding: 14px 15px 0px 0px;
+    margin-bottom: 10px;
+    border: 0px;
+}
+.massage-btn{
+    color: var(--text);
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border-bottom: 1px solid var(--text);
+    background-color: transparent;
+    padding: 20px 15px 0px 0px;
+    margin-bottom: 10px;
+    border: 0px;
+}
+.send_btn {
+    width: 160px;
+    margin: 0 auto;
+    text-align: center;
+}
+.send_btn a {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: var(--white);
+    background-color: var(--red);
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 30px;
+    display: block;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.send_btn a:hover {
+    color: var(--white);
+    background-color: var(--main-color1);
+}
+
+
+
+
+
+
+
+footer{
+    background-color: var(--main-color1);
+}
+footer .container{
+    text-align: center;
+    padding-top: 5%;
+}
+.footer-icon{
+    display: inline;
+}
+.footer-icon i{
+    color: var(--white);
+    background-color: var(--red);
+    margin: 50px;
+    padding: 20px;
+    border-radius: 100%;
+}
+.social-icon{
+    color: var(--white);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.social-icon i{
+    font-size: 30px;
+    margin-left: 50px;
+}
+.copyright p{
+    color: var(--white);
+    padding-bottom: 10px;
+}
+
+
+
+@media only screen and (min-width:150px) and (max-width:900px){
+    .home{
+        height: auto;
+        background: var(--main-color1);
+    }
+    .navbar-brand {
+        width: 50%;
+        height: 100px;
+    }
+    .navbar-nav{
+        text-align: center;
+    }
+    .navbar-nav2{
+        display: none;
+    }
+    .carousel-img{
+        padding-left: 10%;
+    }
+    .contact_btn{
+        margin-left: 0;
+    }
+    .btn{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .cards .container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #carousel2 i{
+        display: none;
+    }
+    .study .container{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+    .clients img{
+        height: 100%;
+        margin-left: -15%;
+    }
+    .clients h3 span{
+        width: 80px;
+        height: 3%;
+        position: absolute;
+        right: 0;
+    }
+    #carousel3 i{
+        border-radius: 100%;
+    }
+    .footer-icon{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
